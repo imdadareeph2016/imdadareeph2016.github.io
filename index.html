@@ -1,33 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="no-js">
+
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118280263-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Imdad's Portfolio</title>
+	<meta name="description" content="Imdads portfolio" />
+	<meta name="keywords" content="Imdads portfolio" />
+	<meta name="author" content="Imdad Areeph" />
+	<link rel="shortcut icon" href="favicon.ico">
 
-  gtag('config', 'UA-118280263-1');
-</script>
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/baguetteBox.min.css" />
+	<link rel="stylesheet" href="assets/css/projects.css">
+	<link rel="stylesheet" href="assets/css/Footer-with-button-logo.css">
 
-	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Imdad's Projects</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/baguetteBox.min.css" />
-
-		<link rel="stylesheet" href="css/projects.css">
-		<link rel="stylesheet" href="css/Footer-with-button-logo.css">
-
+	<link rel="stylesheet" type="text/css" href="assets/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/card.css" />
+	<link rel="stylesheet" type="text/css" href="assets/css/pattern.css" />
+	<!--[if IE]>
+	  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<script>
+	if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+		var root = document.getElementsByTagName('html')[0];
+		root.setAttribute('class', 'ff');
+	};
+	</script>
 </head>
-<body>
-	<nav class="navbar navbar-expand-lg bg-info navbar-dark">
+<body class="demo-1">
+
+	<!--NAVBAR-START-->
+	<nav class="navbar navbar-expand-lg bg-info navbar-dark sticky-top"> <!-- style="background-color: #333333 !important;" -->
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
-	  <a class="navbar-brand" href="#">Imdad Areeph Projects</a>
+	  <a class="navbar-brand" href="/">Imdad Areeph Projects</a>
 
 		<div class="navbar-collapse collapse" id="navbarTogglerDemo03" style="">
 	    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -37,7 +48,7 @@
 	    <form class="form-inline my-2 my-lg-0">
 	    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 	      <li class="nav-item active">
-	        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+	        <a class="nav-link" href="http://www.imdadareeph.com/">Home <span class="sr-only">(current)</span></a>
 	      </li>
 	      <li class="nav-item">
 	        <a class="nav-link" href="http://www.imdadareeph.com/#about">About</a>
@@ -49,131 +60,277 @@
 	  </div>
 	</nav>
 	<!--NAVBAR-END-->
-   <section class="gallery-block cards-gallery">
-	    <div class="container">
-	        <div class="heading">
-	          <h2>Imdad Areeph Personal Projects</h2>
-	        </div>
-	        <div class="row">
-	            <div class="col-md-6 col-lg-4">
-	                <div class="card border-0 transform-on-hover">
-	                	<a class="lightbox" href="http://www.imdadareeph.com/images/project-1.jpg">
-	                		<img src="http://www.imdadareeph.com/images/project-1.jpg" alt="Card Image" class="card-img-top">
-	                	</a>
-	                    <div class="card-body">
-	                        <h6><a href="#">Imdads World</a></h6>
-	                        <p class="text-muted card-text">Springboot Project.</p>
-	                    </div>
-	                </div>
-	            </div>
-	            <div class="col-md-6 col-lg-4">
-	                <div class="card border-0 transform-on-hover">
-						<a class="lightbox" href="http://www.imdadareeph.com/images/project-2.jpg">
-		                	<img src="http://www.imdadareeph.com/images/project-2.jpg" alt="Card Image" class="card-img-top">
-		                </a>
-	                    <div class="card-body">
-	                        <h6><a href="#">Phoenix</a></h6>
-	                        <p class="text-muted card-text">Devops Project.</p>
-	                    </div>
-	                </div>
-	            </div>
-	            <div class="col-md-6 col-lg-4">
-	                <div class="card border-0 transform-on-hover">
-	                	<a class="lightbox" href="http://www.imdadareeph.com/images/project-3.jpg">
-	                		<img src="http://www.imdadareeph.com/images/project-3.jpg" alt="Card Image" class="card-img-top">
-	                	</a>
-	                    <div class="card-body">
-	                        <h6><a href="#">Guess Game</a></h6>
-	                        <p class="text-muted card-text">AngularJs Project.</p>
-	                    </div>
-	                </div>
-	            </div>
-	            <div class="col-md-6 col-lg-4">
-	                <div class="card border-0 transform-on-hover">
-	                	<a class="lightbox" href="http://www.imdadareeph.com/images/project-4.jpg">
-	                		<img src="http://www.imdadareeph.com/images/project-4.jpg" alt="Card Image" class="card-img-top">
-	                	</a>
-	                    <div class="card-body">
-	                        <h6><a href="#">Portfolio</a></h6>
-	                        <p class="text-muted card-text">Personal site Project.</p>
-	                    </div>
-	                </div>
-	            </div>
-	            <div class="col-md-6 col-lg-4">
-	                <div class="card border-0 transform-on-hover">
-	                	<a class="lightbox" href="http://www.imdadareeph.com/images/graphic-design-1.jpg">
-	                		<img src="http://www.imdadareeph.com/images/graphic-design-1.jpg" alt="Card Image" class="card-img-top">
-	                	</a>
-	                    <div class="card-body">
-	                        <h6><a href="#">Bluradmin</a></h6>
-	                        <p class="text-muted card-text">AngularJs forked project.</p>
-	                    </div>
-	                </div>
-	            </div>
-	            <div class="col-md-6 col-lg-4">
-	                <div class="card border-0 transform-on-hover">
-	                	<a class="lightbox" href="http://www.imdadareeph.com/images/graphic-design-2.jpg">
-	                		<img src="http://www.imdadareeph.com/images/graphic-design-2.jpg" alt="Card Image" class="card-img-top">
-	                	</a>
-	                    <div class="card-body">
-	                        <h6><a href="#">Savinet</a></h6>
-	                        <p class="text-muted card-text">Social networking using JSP servlet.</p>
-	                    </div>
-	                </div>
-	            </div>
-	        </div>
-	    </div>
-    </section>
-		<footer id="myFooter">
-		    <div class="container">
-		        <div class="row">
-		            <div class="col-sm-3">
-		                <h2 class="logo"><a href="/"> <img src="http://i66.tinypic.com/x6mp6p.jpg" width="150px" height="150px"></img> </a></h2>
-		            </div>
-		            <div class="col-sm-2">
-		                <h5>Imdad Areeph</h5>
-		                <ul>
-		                    <li><a href="/">Home</a></li>
-		                    <li><a href="#">My work</a></li>
-		                    <li><a href="#">Downloads</a></li>
-		                </ul>
-		            </div>
-		            <div class="col-sm-2">
-		                <h5>About me</h5>
-		                <ul>
-		                    <li><a href="#">Portfolio</a></li>
-		                    <li><a href="#">Contact Me</a></li>
-		                    <li><a href="#">Reviews</a></li>
-		                </ul>
-		            </div>
-		            <div class="col-sm-2">
-		                <h5>Support</h5>
-		                <ul>
-		                    <li><a href="#">FAQ</a></li>
-		                    <li><a href="#">Help desk</a></li>
-		                    <li><a href="#">Forums</a></li>
-		                </ul>
-		            </div>
-		            <div class="col-sm-3">
-		                <div class="social-networks">
-		                    <a href="https://twitter.com/imdadareeph" class="twitter"><i class="fa fa-twitter"></i></a>
-		                    <a href="https://www.facebook.com/imdadareeph" class="facebook"><i class="fa fa-facebook"></i></a>
-		                    <a href="https://github.com/imdadareeph" class="google"><i class="fa fa-github"></i></a>
-		                </div>
-		                <button type="button" class="btn btn-default">Contact Me</button>
-		            </div>
-		        </div>
-		    </div>
-		    <div class="footer-copyright">
-		        <p>© 2018 Imdad Areeph , All rights reserved </p>
-		    </div>
-		</footer>
-    <script src="js/baguetteBox.min.js"></script>
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" ></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-		<script>
-        baguetteBox.run('.cards-gallery', { animation: 'slideIn'});
-    </script>
+
+	<div class="container">
+		<div class="content">
+			<!-- trianglify pattern container -->
+			<div class="pattern pattern--hidden"></div>
+			<!-- cards -->
+			<div class="wrapper">
+				<div class="card">
+					<div class="card__container card__container--closed">
+						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+							<defs>
+								<clipPath id="clipPath1">
+									<!-- r = 992 = hyp = Math.sqrt(960*960+250*250) -->
+									<circle class="clip" cx="960" cy="250" r="992"></circle>
+								</clipPath>
+							</defs>
+							<image clip-path="url(#clipPath1)" width="1920" height="500" xlink:href="assets/img/a1.jpg"></image>
+						</svg>
+						<div class="card__content">
+							<i class="card__btn-close fa fa-times"></i>
+							<div class="card__caption">
+								<h2 class="card__title">Imdad's World</h2>
+								<p class="card__subtitle">A Self maintained webapp</p>
+							</div>
+							<div class="card__copy">
+								<div class="meta">
+									<img class="meta__avatar" src="assets/img/authors/1.png" alt="author01" />
+									<span class="meta__author">Imdad Areeph</span>
+									<span class="meta__date">04/28/2018</span>
+								</div>
+								<p>I Am A Blogger, Technologist, Internet Crazy; In Short, A Typical Software Engineer Who Falls In Love With Everything That Relates To Increase Knowledge And Create Innovations In short, I am "Jack of most of the trade but master of some".</p>
+								<p>I am Skilled in Java J2EE Spring JSF Hibernate JPA Docker Springboot Node Html Css AngularJS Oracle Mysql Unix etc.</p>
+								<p>I have been working as a java web application developer since. I have a love of clean, elegant styling, and I have lots of experience in the production of Spring,JSF,JPA based applications.</p>
+								<p>An opportunity to work and upgrade oneself, as well as being involved in an organization that believes in gaining a competitive edge and giving back to the community. I'm presently expanding my solid experience in Java with microservices web application development. </p>
+								<p>I focus on using my interpersonal skills to build good user experience and create a strong interest in my employers.</p>
+								<p>I hope to develop skills in motion design and my knowledge of the Web, and become an honest asset to the business. As an individual, I'm self-confident you’ll find me creative, funny and naturally passionate. I’m a forward thinker, which others may find inspiring when working as a team.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__container card__container--closed">
+						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+							<defs>
+								<clipPath id="clipPath2">
+									<!-- r = 992 = hyp = Math.sqrt(960*960+250*250) -->
+									<circle class="clip" cx="960" cy="250" r="992"></circle>
+								</clipPath>
+							</defs>
+							<image clip-path="url(#clipPath2)" width="1920" height="500" xlink:href="assets/img/b1.jpg"></image>
+						</svg>
+						<div class="card__content">
+							<i class="card__btn-close fa fa-times"></i>
+							<div class="card__caption">
+								<h2 class="card__title">Phoenix Project</h2>
+								<p class="card__subtitle">A Project rising from ashes</p>
+							</div>
+							<div class="card__copy">
+								<div class="meta">
+									<img class="meta__avatar" src="assets/img/authors/2.png" alt="author02" />
+									<span class="meta__author">Imdad Areeph</span>
+									<span class="meta__date">04/22/2018</span>
+								</div>
+								<p>I Am A Blogger, Technologist, Internet Crazy; In Short, A Typical Software Engineer Who Falls In Love With Everything That Relates To Increase Knowledge And Create Innovations In short, I am "Jack of most of the trade but master of some".</p>
+								<p>I am Skilled in Java J2EE Spring JSF Hibernate JPA Docker Springboot Node Html Css AngularJS Oracle Mysql Unix etc.</p>
+								<p>I have been working as a java web application developer since. I have a love of clean, elegant styling, and I have lots of experience in the production of Spring,JSF,JPA based applications.</p>
+								<p>An opportunity to work and upgrade oneself, as well as being involved in an organization that believes in gaining a competitive edge and giving back to the community. I'm presently expanding my solid experience in Java with microservices web application development. </p>
+								<p>I focus on using my interpersonal skills to build good user experience and create a strong interest in my employers.</p>
+								<p>I hope to develop skills in motion design and my knowledge of the Web, and become an honest asset to the business. As an individual, I'm self-confident you’ll find me creative, funny and naturally passionate. I’m a forward thinker, which others may find inspiring when working as a team.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__container card__container--closed">
+						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+							<defs>
+								<clipPath id="clipPath3">
+									<!-- r = 992 = hyp = Math.sqrt(960*960+250*250) -->
+									<circle class="clip" cx="960" cy="250" r="992"></circle>
+								</clipPath>
+							</defs>
+							<image clip-path="url(#clipPath3)" width="1920" height="500" xlink:href="assets/img/c1.jpg"></image>
+						</svg>
+						<div class="card__content">
+							<i class="card__btn-close fa fa-times"></i>
+							<div class="card__caption">
+								<h2 class="card__title">My Portfolio</h2>
+								<p class="card__subtitle">Portfolio website</p>
+							</div>
+							<div class="card__copy">
+								<div class="meta">
+									<img class="meta__avatar" src="assets/img/authors/3.png" alt="author03" />
+									<span class="meta__author">Imdad Areeph</span>
+									<span class="meta__date">03/12/2018</span>
+								</div>
+								<p>I Am A Blogger, Technologist, Internet Crazy; In Short, A Typical Software Engineer Who Falls In Love With Everything That Relates To Increase Knowledge And Create Innovations In short, I am "Jack of most of the trade but master of some".</p>
+								<p>I am Skilled in Java J2EE Spring JSF Hibernate JPA Docker Springboot Node Html Css AngularJS Oracle Mysql Unix etc.</p>
+								<p>I have been working as a java web application developer since. I have a love of clean, elegant styling, and I have lots of experience in the production of Spring,JSF,JPA based applications.</p>
+								<p>An opportunity to work and upgrade oneself, as well as being involved in an organization that believes in gaining a competitive edge and giving back to the community. I'm presently expanding my solid experience in Java with microservices web application development. </p>
+								<p>I focus on using my interpersonal skills to build good user experience and create a strong interest in my employers.</p>
+								<p>I hope to develop skills in motion design and my knowledge of the Web, and become an honest asset to the business. As an individual, I'm self-confident you’ll find me creative, funny and naturally passionate. I’m a forward thinker, which others may find inspiring when working as a team.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__container card__container--closed">
+						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+							<defs>
+								<clipPath id="clipPath4">
+									<!-- r = 992 = hyp = Math.sqrt(960*960+250*250) -->
+									<circle class="clip" cx="960" cy="250" r="992"></circle>
+								</clipPath>
+							</defs>
+							<image clip-path="url(#clipPath4)" width="1920" height="500" xlink:href="assets/img/d1.jpg"></image>
+						</svg>
+						<div class="card__content">
+							<i class="card__btn-close fa fa-times"></i>
+							<div class="card__caption">
+								<h2 class="card__title">My Desk</h2>
+								<p class="card__subtitle">My desktop redefined!</p>
+							</div>
+							<div class="card__copy">
+								<div class="meta">
+									<img class="meta__avatar" src="assets/img/authors/4.png" alt="author04" />
+									<span class="meta__author">Imdad Areeph</span>
+									<span class="meta__date">02/14/2018</span>
+								</div>
+								<p>I Am A Blogger, Technologist, Internet Crazy; In Short, A Typical Software Engineer Who Falls In Love With Everything That Relates To Increase Knowledge And Create Innovations In short, I am "Jack of most of the trade but master of some".</p>
+								<p>I am Skilled in Java J2EE Spring JSF Hibernate JPA Docker Springboot Node Html Css AngularJS Oracle Mysql Unix etc.</p>
+								<p>I have been working as a java web application developer since. I have a love of clean, elegant styling, and I have lots of experience in the production of Spring,JSF,JPA based applications.</p>
+								<p>An opportunity to work and upgrade oneself, as well as being involved in an organization that believes in gaining a competitive edge and giving back to the community. I'm presently expanding my solid experience in Java with microservices web application development. </p>
+								<p>I focus on using my interpersonal skills to build good user experience and create a strong interest in my employers.</p>
+								<p>I hope to develop skills in motion design and my knowledge of the Web, and become an honest asset to the business. As an individual, I'm self-confident you’ll find me creative, funny and naturally passionate. I’m a forward thinker, which others may find inspiring when working as a team.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__container card__container--closed">
+						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+							<defs>
+								<clipPath id="clipPath5">
+									<!-- r = 992 = hyp = Math.sqrt(960*960+250*250) -->
+									<circle class="clip" cx="960" cy="250" r="992"></circle>
+								</clipPath>
+							</defs>
+							<image clip-path="url(#clipPath5)" width="1920" height="500" xlink:href="assets/img/e1.jpg"></image>
+						</svg>
+						<div class="card__content">
+							<i class="card__btn-close fa fa-times"></i>
+							<div class="card__caption">
+								<h2 class="card__title">Wordpress blog</h2>
+								<p class="card__subtitle">Java story</p>
+							</div>
+							<div class="card__copy">
+								<div class="meta">
+									<img class="meta__avatar" src="assets/img/authors/5.png" alt="author05" />
+									<span class="meta__author">Imdad Areeph</span>
+									<span class="meta__date">01/11/2018</span>
+								</div>
+								<p>I Am A Blogger, Technologist, Internet Crazy; In Short, A Typical Software Engineer Who Falls In Love With Everything That Relates To Increase Knowledge And Create Innovations In short, I am "Jack of most of the trade but master of some".</p>
+								<p>I am Skilled in Java J2EE Spring JSF Hibernate JPA Docker Springboot Node Html Css AngularJS Oracle Mysql Unix etc.</p>
+								<p>I have been working as a java web application developer since. I have a love of clean, elegant styling, and I have lots of experience in the production of Spring,JSF,JPA based applications.</p>
+								<p>An opportunity to work and upgrade oneself, as well as being involved in an organization that believes in gaining a competitive edge and giving back to the community. I'm presently expanding my solid experience in Java with microservices web application development. </p>
+								<p>I focus on using my interpersonal skills to build good user experience and create a strong interest in my employers.</p>
+								<p>I hope to develop skills in motion design and my knowledge of the Web, and become an honest asset to the business. As an individual, I'm self-confident you’ll find me creative, funny and naturally passionate. I’m a forward thinker, which others may find inspiring when working as a team.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card__container card__container--closed">
+						<svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 500" preserveAspectRatio="xMidYMid slice">
+							<defs>
+								<clipPath id="clipPath6">
+									<!-- r = 992 = hyp = Math.sqrt(960*960+250*250) -->
+									<circle class="clip" cx="960" cy="250" r="992"></circle>
+								</clipPath>
+							</defs>
+							<image clip-path="url(#clipPath6)" width="1920" height="500" xlink:href="assets/img/f1.jpg"></image>
+						</svg>
+						<div class="card__content">
+							<i class="card__btn-close fa fa-times"></i>
+							<div class="card__caption">
+								<h2 class="card__title">Blogspot stories</h2>
+								<p class="card__subtitle">Tech guide blogs</p>
+							</div>
+							<div class="card__copy">
+								<div class="meta">
+									<img class="meta__avatar" src="assets/img/authors/6.png" alt="author06" />
+									<span class="meta__author">Imdad Areeph</span>
+									<span class="meta__date">06/10/2017</span>
+								</div>
+								<p>I Am A Blogger, Technologist, Internet Crazy; In Short, A Typical Software Engineer Who Falls In Love With Everything That Relates To Increase Knowledge And Create Innovations In short, I am "Jack of most of the trade but master of some".</p>
+								<p>I am Skilled in Java J2EE Spring JSF Hibernate JPA Docker Springboot Node Html Css AngularJS Oracle Mysql Unix etc.</p>
+								<p>I have been working as a java web application developer since. I have a love of clean, elegant styling, and I have lots of experience in the production of Spring,JSF,JPA based applications.</p>
+								<p>An opportunity to work and upgrade oneself, as well as being involved in an organization that believes in gaining a competitive edge and giving back to the community. I'm presently expanding my solid experience in Java with microservices web application development. </p>
+								<p>I focus on using my interpersonal skills to build good user experience and create a strong interest in my employers.</p>
+								<p>I hope to develop skills in motion design and my knowledge of the Web, and become an honest asset to the business. As an individual, I'm self-confident you’ll find me creative, funny and naturally passionate. I’m a forward thinker, which others may find inspiring when working as a team.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /cards -->
+		</div><!-- /content -->
+		<!-- Related demos -->
+		<div class="wrapper">
+    	<p class="text-center"><a class="nav-link" href="/others.html">More ...</a></p>
+    </div>
+	</div>
+	<!-- /container -->
+	<footer id="myFooter">
+			<div class="container">
+					<div class="row">
+							<div class="col-sm-3">
+									<h2 class="logo"><a href="/"> <img src="assets/img/imdad.jpg" width="150px" height="150px"></img> </a></h2>
+							</div>
+							<div class="col-sm-2">
+									<h5>Imdad Areeph</h5>
+									<ul>
+											<li><a href="/">Home</a></li>
+											<li><a href="#">My work</a></li>
+											<li><a href="#">Downloads</a></li>
+									</ul>
+							</div>
+							<div class="col-sm-2">
+									<h5>About me</h5>
+									<ul>
+											<li><a href="#">Portfolio</a></li>
+											<li><a href="#">Contact Me</a></li>
+											<li><a href="#">Reviews</a></li>
+									</ul>
+							</div>
+							<div class="col-sm-2">
+									<h5>Support</h5>
+									<ul>
+											<li><a href="#">FAQ</a></li>
+											<li><a href="#">Help desk</a></li>
+											<li><a href="#">Forums</a></li>
+									</ul>
+							</div>
+							<div class="col-sm-3">
+									<div class="social-networks">
+											<a href="https://twitter.com/imdadareeph" class="twitter"><i class="fa fa-twitter"></i></a>
+											<a href="https://www.facebook.com/imdadareeph" class="facebook"><i class="fa fa-facebook"></i></a>
+											<a href="https://github.com/imdadareeph" class="google"><i class="fa fa-github"></i></a>
+									</div>
+									<button type="button" class="btn btn-default">Contact Me</button>
+							</div>
+					</div>
+			</div>
+			<div class="footer-copyright">
+					<p>© 2018 Imdad Areeph , All rights reserved </p>
+			</div>
+	</footer>
+	<!-- JS -->
+	<script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+	<script src="assets/js/popper.min.js" ></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+
+	<script src="assets/js/vendors/trianglify.min.js"></script>
+	<script src="assets/js/vendors/TweenMax.min.js"></script>
+	<script src="assets/js/vendors/ScrollToPlugin.min.js"></script>
+	<script src="assets/js/vendors/cash.min.js"></script>
+	<script src="assets/js/Card-circle.js"></script>
+	<script src="assets/js/demo.js"></script>
+
 </body>
+
 </html>
