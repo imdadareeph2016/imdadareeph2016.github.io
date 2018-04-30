@@ -158,13 +158,11 @@
 									and run it with all needed parameter:
 									<pre> docker run -d -p 8081:8081 imdadareeph/phoenixui:v1.0.0 </pre>
 									That's it.
-
 									<h2>Templates and others</h2>
 									<p class="text-secondary">
 										This image uses templates modified from free site.If known, credit can be given.Please contact @imdadareeph2016@gmail.com
 									</p>
 									<h2>Environment variables</h2>
-
 									This image uses following commands for configuration.
 									<table class="table table-bordered">
 								  <thead>
@@ -179,36 +177,25 @@
 								    <tr>
 								      <th scope="row">1</th>
 								      <td>Docker build</td>
-								      <td>Docker run</td>
+								      <td>no default</td>
 											<td>$docker build -t imdadareeph/phoenixui:v1.0.0 .</td>
 								    </tr>
 								    <tr>
 								      <th scope="row">2</th>
-								      <td>no default</td>
+								      <td>Docker run</td>
 								      <td>no default</td>
 											<td>@docker run -d -p 8081:8081 imdadareeph/phoenixui:v1.0.0</td>
 								    </tr>
 								  </tbody>
 								</table>
-
-
-
-									<h2>Updates and updating</h2>
-
+								<h2>Updates and updating</h2>
 									To update your setup simply pull the newest image version from docker hub and run it.
-
-
-									<h2>Deprecated features</h2>
-
+								<h2>Deprecated features</h2>
 									Instead of using imdadareeph/rhel7nodejs9 image, any light nodejs image can be used (e.g. node:alpine)
-
-									<h2>License</h2>
-
+								<h2>License</h2>
 									Everything in <a href="https://github.com/imdadareeph/phoenixui">[this project]</a> is published under <a href="https://spdx.org/licenses/GPL-3.0">[GPL-3]</a>.
-
-									<h2> How to start</h2>
+								<h2> How to start</h2>
 									<p class="text-muted">**Note** that this seed project requires  **node >=v6.9.0 and npm >=3**.</p>
-
 									<p class="form-control text-secondary">In order to start the project use:</p>
 									<pre>git clone https://github.com/imdadareeph/phoenixui</pre>
 									<pre>cd phoenixui</pre>
@@ -217,8 +204,6 @@
 									<p class="form-control text-secondary">watches your files and uses livereload by default run `npm start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.</p>
 									<pre>npm start</pre>
 									<pre>npm run build</pre>
-
-
 								</p>
 								<p class="text-muted">I am Skilled in Java J2EE Spring JSF Hibernate JPA Docker Springboot Node Html Css AngularJS Oracle Mysql Unix etc.</p>
 								<p class="text-muted">I have been working as a java web application developer since. I have a love of clean, elegant styling, and I have lots of experience in the production of Spring,JSF,JPA based applications.</p>
@@ -246,15 +231,65 @@
 							</div>
 							<div class="card__copy">
 								<div class="meta">
-									<img class="meta__avatar" src="assets/img/authors/3.png" alt="author03" />
+									<img class="meta__avatar" src="assets/img/authors/1.png" alt="author01" />
 									<span class="meta__author">Imdad Areeph</span>
-									<span class="meta__date">03/12/2018</span>
+									<a class="fa fa-git-square" href="https://github.com/imdadareeph/portfolio/archive/master.zip" >Download</a></p>
+									<span class="meta__date">03/03/2018</span>
 								</div>
-								<p>I Am A Blogger, Technologist, Internet Crazy; In Short, A Typical Software Engineer Who Falls In Love With Everything That Relates To Increase Knowledge And Create Innovations In short, I am "Jack of most of the trade but master of some".</p>
+								<p>This is a Personal portfolio site.</p>
+								<!--p>
+									<a class="fa fa-git-square" href="https://github.com/imdadareeph/springbootadmin/archive/master.zip">Download on GitHub</a>
+								</p -->
+								<p>
+									Persional portfolio site
+								</p>
+								<p class="code-stmnt">To run the application simply type below commands in terminal from the root of the folder</p>
+								<pre>npm install </pre>
+								<pre>node . </pre>
+								<p>
+									<a href="https://github.com/imdadareeph/portfolio"><img style="position: relative;top: 161px;left: 0;border: 0;margin-top: -150px;" src="assets/img/projects/forkme1.png" alt="Fork me on GitHub"></a>
+									<img class="card-img shadow-lg shadow-sm" src="assets/img/projects/3.png" alt="portfolio" />
+								</p>
+								<h2>Available in Docker</h2>
+								This image uses following commands for configuration.
+								<table class="table table-bordered">
+								<thead>
+									<tr>
+										<th scope="col">#</th>
+										<th scope="col">docker commands</th>
+										<th scope="col">Default value</th>
+										<th scope="col">Description</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th scope="row">1</th>
+										<td>Docker build</td>
+										<td>no default</td>
+										<td>$docker build -t imdadareeph/rhel7nodejs9 .</td>
+									</tr>
+									<tr>
+										<th scope="row">2</th>
+										<td>Docker run</td>
+										<td>no default</td>
+										<td>@docker run -d -p 8081:8081 imdadareeph/rhel7nodejs9</td>
+									</tr>
+								</tbody>
+							</table>
+							<p class="font-weight-bold text-danger text-secondary">Docker file:</p>
+							<p class="code">
+								FROM node:9
+								MAINTAINER Imdad Areeph <imdadareeph@gmail.com>
+								RUN mkdir -p /app
+								WORKDIR /app
+								COPY package.json /app
+								RUN npm install
+								COPY . /app
+								EXPOSE 4200
+								CMD ["npm", "start"]
+							</p>
 								<p>I am Skilled in Java J2EE Spring JSF Hibernate JPA Docker Springboot Node Html Css AngularJS Oracle Mysql Unix etc.</p>
 								<p>I have been working as a java web application developer since. I have a love of clean, elegant styling, and I have lots of experience in the production of Spring,JSF,JPA based applications.</p>
-								<p>An opportunity to work and upgrade oneself, as well as being involved in an organization that believes in gaining a competitive edge and giving back to the community. I'm presently expanding my solid experience in Java with microservices web application development. </p>
-								<p>I focus on using my interpersonal skills to build good user experience and create a strong interest in my employers.</p>
 								<p>I hope to develop skills in motion design and my knowledge of the Web, and become an honest asset to the business. As an individual, I'm self-confident you’ll find me creative, funny and naturally passionate. I’m a forward thinker, which others may find inspiring when working as a team.</p>
 							</div>
 						</div>
