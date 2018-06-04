@@ -85,3 +85,14 @@ pre {
 	white-space: pre-line;
 	font-size: 12px;
 }
+
+.code2 {
+    background-color: #161717;
+    color: #25ebb4;
+    padding: 0px 10px 10px 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    white-space: pre-line;
+    font-size: 12px;
+}

@@ -21,6 +21,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/demo.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/card.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/pattern.css" />
+	<link href="css/asciinema-player.css" rel="stylesheet" type="text/css">
 	<!--[if IE]>
 	  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -399,9 +400,38 @@
 			<!-- /cards -->
 		</div><!-- /content -->
 		<!-- Related demos -->
+
 		<div class="wrapper">
+		<!--
+		<pre>Run Oracle on docker - Oracle Standard Edition 12c Release 1</pre>
+		<pre>docker pull imdadareeph/oracle-12c</pre>
+		<pre>docker run -d -p 8080:8080 -p 1521:1521 imdadareeph/oracle-12c</pre>
+		<pre>docker run -d -p 8080:8080 -p 1521:1521 -v /my/oracle/data:/u01/app/oracle imdadareeph/oracle-12c</pre>
+		<pre>docker run -d -p 8080:8080 -p 1521:1521 -v /my/oracle/data:/u01/app/oracle -e DBCA_TOTAL_MEMORY=1024 imdadareeph/oracle-12c</pre>
+		-->
+		<pre>Run Oracle on docker - Oracle Standard Edition 12c Release 1</pre>
+		<p class="code2">
+			$docker pull imdadareeph/oracle-12c
+			$docker run -d -p 8080:8080 -p 1521:1521 imdadareeph/oracle-12c
+			$docker run -d -p 8080:8080 -p 1521:1521 -v /my/oracle/data:/u01/app/oracle imdadareeph/oracle-12c
+			$docker run -d -p 8080:8080 -p 1521:1521 -v /my/oracle/data:/u01/app/oracle -e DBCA_TOTAL_MEMORY=1024 imdadareeph/oracle-12c
+
+			Connect database with following setting:
+
+			hostname: localhost
+			port: 1521
+			sid: xe
+			service name: xe
+			username: system
+			password: oracle
+			To connect using sqlplus:
+		</p>
+
+		<asciinema-player id="player" src="/data/oracle.json" cols="100" rows="30" idle-time-limit="2" poster="data:text/plain,Video demo on \x1b[1;32mImdad's oracle-12c on docker" loop></asciinema-player>
+		<asciinema-player id="player" src="/data/helix.cast" cols="100" rows="30" idle-time-limit="2" poster="data:text/plain,Video demo on \x1b[1;32mImdad's Helix" loop></asciinema-player>
     	<p class="text-center"><a class="nav-link" href="/others.html">More ...</a></p>
     </div>
+
 	</div>
 	<!-- /container -->
 	<footer id="myFooter">
@@ -459,7 +489,7 @@
 	<script src="assets/js/vendors/cash.min.js"></script>
 	<script src="assets/js/Card-circle.js"></script>
 	<script src="assets/js/demo.js"></script>
-
+	<script src="js/asciinema-player.js"></script>
 </body>
 
 </html>
